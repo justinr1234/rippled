@@ -47,7 +47,15 @@ there is a crash course at the end of this document.
 [Conan]: https://conan.io/downloads.html
 [CMake]: https://cmake.org/download/
 
-You'll need to compile in the C++20 dialect:
+You'll need to compile in the C++20 dialect.
+
+If you do not already have one, create a default Conan profile:
+
+```
+conan profile new default
+```
+
+Set the default compilation to the C++20 dialect:
 
 ```
 conan profile update settings.cppstd=20 default
